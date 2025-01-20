@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .magenta-div {
+    width: 200px;
+    height: 100px;
+    background-color: magenta;
+    transition: transform 0.5s ease;
+  }
+  
+  .magenta-div:hover {
+    background-color: #ff5c00;
+    transform: translateX(50px);
+  }
+  
+  .blue-div {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    animation: color-change 3s infinite alternate;
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-color: blue;
+    }
+    50% {
+      background-color: red;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+  
